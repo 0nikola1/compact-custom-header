@@ -23,7 +23,7 @@ This goes into ui-lovelace.yaml under "resources:"
   type: js
 ```
 
-This goes into one of your views under "cards:" in the same file
+This goes into one of your views under "cards:" in the same file. Place as the last "card" in a view.
 
 ```
   - type: custom:compact-custom-header
@@ -42,12 +42,15 @@ You may need to have `javascript_version: latest` in your `configuration.yaml` u
 
 ## Important notes:
 
-* If you find that the default header appears again (happens especially on mobile when leaving and returning to the app) include the code
-in each of your views.
+* Place this "card" as the last card in a view. This will prevent spacing issues.
+
+* If you find that the default header appears again (happens especially on mobile when leaving and returning to the app) include the code in each of your views.
 
 * When changing options in your lovelace config, you may need to do a full browser refresh after to get it to display correctly. ('ctrl + shift + R' on windows). 
 
-* Do not put inside a stack or any other container cards.
+* Do not put inside a stack or any other container cards unless using panel view.
+
+* To use with panel view, place as the last card of a vertical stack.
 
 * When updating, be sure you have the latest companion script (cch_v...js) and have added to a version number at the end of your lovelace resources, like so:
 ```
