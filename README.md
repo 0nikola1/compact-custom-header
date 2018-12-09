@@ -49,6 +49,12 @@ in each of your views.
 
 * Do not put inside a stack or any other container cards.
 
+* When updating, be sure you have the latest companion script (cch_v...js) and added to a version number at the end of your lovelace resources, like so:
+```
+resources:
+- url: /local/custom-lovelace/compact-custom-header/compact-custom-header.js?v=0.0.1
+  type: js
+```
 # Config:
 
 |NAME|TYPE|DEFAULT|ICON|DESCRIPTION|
