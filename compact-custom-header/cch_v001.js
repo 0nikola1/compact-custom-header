@@ -8,13 +8,13 @@ if (typeof doc_root === 'undefined') {
       tabs, tabs_container, tab_chevron, voice_btn_sr, voice_button,
       voice_icon, voice_icon_sr, voice_iron_icon;
 }
-
 doc_root = document.querySelector('home-assistant').shadowRoot;
 main = doc_root.querySelector('home-assistant-main').shadowRoot;
 drawer_layout = main.querySelector('app-drawer-layout');
 pages = drawer_layout.querySelector('partial-panel-resolver').shadowRoot;
 love_lace = pages.querySelector('ha-panel-lovelace').shadowRoot;
 hui_root = love_lace.querySelector('hui-root').shadowRoot;
+
 if (!window.cch_header) {
   hui_root.querySelector('app-header').style.cssText = 'display:none;';
   window.dispatchEvent(new Event('resize'));
@@ -110,7 +110,6 @@ if (!window.cch_header) {
       console.log(e);
     }
   }
-
   window.dispatchEvent(new Event('resize'));
 }
 
