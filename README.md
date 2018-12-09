@@ -69,5 +69,17 @@ resources:
 |clock_format|number|12||12 or 24 hour clock format. Choices are 12 or 24.|
 |clock_am_pm|boolean|true||Display or hide the AM/PM indicator on 12 hour clock.|
 
-
+## Example Config:
+Example shows some default values for illustration purposes, it is unnecessary to define options that have the desired effect as default.
+```
+      - type: custom:compact-custom-header
+        notification: true
+        menu: true
+        options: false
+        voice: false
+        clock: notification
+        clock_format: 12
+        clock_am_pm: true
+        header: true
+```
 <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/FgwNR2l"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">If you feel I deserve it, you can buy me a coffee</span></a><br/><br/><br/>
