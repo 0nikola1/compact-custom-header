@@ -50,7 +50,7 @@ You may need to have `javascript_version: latest` in your `configuration.yaml` u
 
 * Do not put inside a stack or any other container cards unless using panel view.
 
-* To use with panel view, place as the last card of a vertical stack.
+* To use with panel view, place as the last card of a vertical stack containing the panel card and this "card".
 
 * When updating, be sure you have the latest companion script (cch_v...js) and have added to a version number at the end of your lovelace resources, like so:
 ```
