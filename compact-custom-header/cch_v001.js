@@ -20,27 +20,27 @@ if (!window.cch_header) {
   window.dispatchEvent(new Event('resize'));
 } else {
   menu_button = hui_root.querySelector('ha-menu-button');
-  menu_btn_sr = hui_root.querySelector('ha-menu-button').shadowRoot;
+  menu_btn_sr = menu_button.shadowRoot;
   menu_icon = menu_btn_sr.querySelector('paper-icon-button');
-  menu_icon_sr = menu_btn_sr.querySelector('paper-icon-button').shadowRoot;
+  menu_icon_sr = menu_icon.shadowRoot;
   menu_iron_icon = menu_icon_sr.querySelector('iron-icon');
 
   voice_button = hui_root.querySelector('ha-start-voice-button');
-  voice_btn_sr = hui_root.querySelector('ha-start-voice-button').shadowRoot;
+  voice_btn_sr = voice_button.shadowRoot;
   voice_icon = voice_btn_sr.querySelector('paper-icon-button');
-  voice_icon_sr = voice_btn_sr.querySelector('paper-icon-button').shadowRoot;
+  voice_icon_sr = voice_icon.shadowRoot;
   voice_iron_icon = voice_icon_sr.querySelector('iron-icon');
 
   notify_button = hui_root.querySelector('hui-notifications-button');
-  notify_btn_sr = hui_root.querySelector('hui-notifications-button').shadowRoot;
+  notify_btn_sr = notify_button.shadowRoot;
   notify_icon = notify_btn_sr.querySelector('paper-icon-button');
-  notify_icon_sr = notify_btn_sr.querySelector('paper-icon-button').shadowRoot;
+  notify_icon_sr = notify_icon.shadowRoot;
   notify_iron_icon = notify_icon_sr.querySelector('iron-icon');
   notify_indicator = notify_btn_sr.querySelector('[class="indicator"]');
 
   options_button = hui_root.querySelector('paper-menu-button');
   options_icon = options_button.querySelector('paper-icon-button');
-  options_icon_sr = options_button.querySelector('paper-icon-button').shadowRoot;
+  options_icon_sr = options_icon.shadowRoot;
   options_iron_icon = options_icon_sr.querySelector('iron-icon');
 
   hui_root.querySelector('app-toolbar').style.cssText = 'margin-top:-64px;';
