@@ -9,7 +9,7 @@ class CompactCustomHeader extends HTMLElement {
     window.cch_clock_format = this.config.clock_format == undefined ? 12 : this.config.clock_format;
     window.cch_am_pm = this.config.clock_am_pm == undefined ? true : this.config.clock_am_pm;
     const script = document.createElement('script');
-    script.src = '/local/custom-lovelace/compact-custom-header/cch_v001.js';
+    script.src = '/local/custom-lovelace/compact-custom-header/cch_v002.js';
     document.head.appendChild(script);
   }
   setConfig(config) {
